@@ -1,0 +1,23 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Orgit"
+      xmlns:Wpf="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls" x:Class="Orgit.Setting"
+      mc:Ignorable="d" 
+      d:DesignHeight="680" d:DesignWidth="980"
+      Title="Setting" Background="#212121">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" Height="198" Margin="619,41,0,0" VerticalAlignment="Top" Width="316">
+            <StackPanel.Background>
+                <SolidColorBrush Color="White" Opacity="0.1"/>
+            </StackPanel.Background>
+            <Label x:Name="reshtelbl" Content="رشته تحصیلی" Padding="0" Foreground="#e3e3e3" FontSize="45" FontFamily="B Nazanin" HorizontalContentAlignment="Right" Margin="0,0,10,0"/>
+            <RadioButton x:Name="reshteriazirbtn" IsChecked="True" GroupName="reshte" Content="ریاضی" Padding="10,0,0,0" Foreground="#e3e3e3" FontSize="35" VerticalContentAlignment="Center" FlowDirection="RightToLeft" FontFamily="B Nazanin" Background="#FF007ACC" BorderBrush="#FF007ACC" Margin="0,0,20,0" />
+            <RadioButton x:Name="reshtetajrobirbtn" IsChecked="False" GroupName="reshte" Content="تجربی" Padding="10,0,0,0" Foreground="#e3e3e3" FontSize="35" VerticalContentAlignment="Center" FlowDirection="RightToLeft" FontFamily="B Nazanin" Background="#FF007ACC" BorderBrush="#FF007ACC" Margin="0,0,20,0"/>
+
+        </StackPanel>
+    </Grid>
+</Page>

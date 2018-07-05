@@ -1,0 +1,60 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Orgit"
+      xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls" 
+      xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit" 
+      xmlns:Obselete="clr-namespace:Xceed.Wpf.Toolkit.Obselete;assembly=Xceed.Wpf.Toolkit" 
+      xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+      xmlns:geared="clr-namespace:LiveCharts.Geared;assembly=LiveCharts.Geared"
+      x:Class="Orgit.Organize"
+      mc:Ignorable="d" 
+      d:DesignHeight="680" d:DesignWidth="980" 
+      Background="#212121"
+      Title="Organize">
+
+    <Grid>
+        <Button x:Name="Riazibtn" Content="حسابان " HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="36" FontFamily="B Nazanin" HorizontalAlignment="Left" Margin="766,57,0,0" VerticalAlignment="Top" Width="160" Height="109" Padding="0" BorderThickness="0" RenderTransformOrigin="0.5,0.5" mah:ButtonHelper.CornerRadius="20" Background="#FF1A237E" BorderBrush="#FF1A237E" Foreground="#FFB1B1B1" Click="Riazibtn_Click"/>
+        <Button x:Name="Fizikbtn" Content="فیزیک" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="36" FontFamily="B Nazanin" HorizontalAlignment="Left" Margin="590,57,0,0" VerticalAlignment="Top" Width="160" Height="109" RenderTransformOrigin="0.039,0.697" Padding="0" Foreground="#FFB1B1B1" Background="#FF01579B" BorderBrush="#FF01579B" Click="Fizikbtn_Click"/>
+        <Button x:Name="Shimibtn" Content="شیمی" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="36" FontFamily="B Nazanin" HorizontalAlignment="Left" Margin="412,57,0,0" VerticalAlignment="Top" Width="160" Height="109" Padding="0" Foreground="#FFB1B1B1" BorderBrush="#FF880E4F" Background="#FF880E4F" Click="Shimibtn_Click"/>
+        <Button x:Name="Zaminbtn" Content="زمین شناسی" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="34" FontFamily="B Nazanin" HorizontalAlignment="Left" Margin="234,57,0,0" VerticalAlignment="Top" Width="160" Height="109" Padding="0" Foreground="#FFB1B1B1" Background="#FF3E2723" BorderBrush="#FF3E2723" Click="Zaminbtn_Click"/>
+        <Button x:Name="Zabanbtn" Content="فارسی" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="36" FontFamily="B Nazanin" HorizontalAlignment="Left" Margin="766,185,0,0" VerticalAlignment="Top" Width="160" Height="109" Padding="0" Foreground="#FFB1B1B1" Background="#FF33691E" BorderBrush="#FF33691E" Click="Zabanbtn_Click"/>
+        <Button x:Name="Dinibtn" Content="دینی"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="36" FontFamily="B Nazanin" HorizontalAlignment="Left" Margin="590,185,0,0" VerticalAlignment="Top" Width="160" Height="109" Padding="0" Foreground="#FFB1B1B1" BorderBrush="#FFF57F17" Background="#FFF57F17" Click="Dinibtn_Click"/>
+        <Button x:Name="Farsibtn" Content="عربی" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="36" FontFamily="B Nazanin" HorizontalAlignment="Left" Margin="412,185,0,0" VerticalAlignment="Top" Width="160" Height="109" Padding="0" Foreground="#FFB1B1B1" Background="#FF004D40" BorderBrush="#FF004D40" Click="Farsibtn_Click"/>
+        <Button x:Name="Arabibtn" Content="زبان" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="36" FontFamily="B Nazanin" HorizontalAlignment="Left" Margin="234,185,0,0" VerticalAlignment="Top" Width="160" Height="109" Padding="0" Foreground="#FFB1B1B1" BorderBrush="#FFBF360C" Background="#FFBF360C" Click="Arabibtn_Click"/>
+        <Button x:Name="Hendesebtn" Content="هندسه" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="34" FontFamily="B Nazanin" HorizontalAlignment="Left" Margin="56,57,0,0" VerticalAlignment="Top" Width="160" Height="109" Padding="0" Foreground="#FFB1B1B1" BorderBrush="#FF827717" Background="#FF827717" Click="Hendesebtn_Click"/>
+        <Button x:Name="Amarbtn" Content="آمارو احتمال" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="34" FontFamily="B Nazanin" HorizontalAlignment="Left" Margin="56,185,0,0" VerticalAlignment="Top" Width="160" Height="109" Padding="0" Foreground="#FFB1B1B1" Background="#FF263238" BorderBrush="#FF263238" Click="Amarbtn_Click"/>
+
+        <Label x:Name="label" Content="تسلط" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#e3e3e3" FontSize="50" FontFamily="B Nazanin" Margin="736,299,0,0" VerticalAlignment="Top" Height="80" RenderTransformOrigin="0.5,2" Width="218"/>
+        <StackPanel HorizontalAlignment="Left" Height="264" Margin="642,390,0,26" VerticalAlignment="Center" Width="300">
+            <Label Content="دهم" FontFamily="B Nazanin" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#e3e3e3"/>
+            <lvc:Gauge HorizontalAlignment="Center" Height="170"  VerticalAlignment="Center" Width="170" AutomationProperties.IsRowHeader="True"  To="100" Uses360Mode="True"  Value="40" Foreground="#FFE3E3E3" FromColor="#FFFFF9C4" ToColor="#FFFFD600"  >
+                <lvc:Gauge.GaugeBackground>
+                    <SolidColorBrush Color="#19FFF9C4"/>
+                </lvc:Gauge.GaugeBackground>
+            </lvc:Gauge>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="265" Margin="337,390,0,25" VerticalAlignment="Center" Width="300">
+            <Label Content="یازدهم" FontFamily="B Nazanin" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#e3e3e3"/>
+            <lvc:Gauge HorizontalAlignment="Center" Height="170"  VerticalAlignment="Center" Width="170" AutomationProperties.IsRowHeader="True"  To="100" Uses360Mode="True"  Value="60" Foreground="#FFE3E3E3" FromColor="#FFFFFF8D" ToColor="#FFAEEA00"  >
+                <lvc:Gauge.GaugeBackground>
+                    <SolidColorBrush Color="#FFF4FF81" Opacity="0.1"/>
+                </lvc:Gauge.GaugeBackground>
+            </lvc:Gauge>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="264" Margin="37,390,0,26" VerticalAlignment="Center" Width="300">
+            <Label Content="دوازدهم" FontFamily="B Nazanin" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#e3e3e3"/>
+            <lvc:Gauge HorizontalAlignment="Center" Height="170"  VerticalAlignment="Center" Width="170" AutomationProperties.IsRowHeader="True"  To="100" Uses360Mode="True"  Value="10" Foreground="#FFE3E3E3" FromColor="#FFFFFF8D" ToColor="#FFD50000"  >
+                <lvc:Gauge.GaugeBackground>
+                    <SolidColorBrush Color="#FFFF8A80" Opacity="0.1"/>
+                </lvc:Gauge.GaugeBackground>
+            </lvc:Gauge>
+        </StackPanel>
+
+
+
+
+    </Grid>
+</Page>

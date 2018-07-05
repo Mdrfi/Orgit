@@ -1,0 +1,27 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Orgit"
+      xmlns:Wpf="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf" 
+      x:Class="Orgit.Lessons"
+      mc:Ignorable="d" 
+      d:DesignHeight="680" d:DesignWidth="980"
+      Title="Lessons" Background="#FF212121">
+
+    <Grid>
+        <!--
+        <StackPanel HorizontalAlignment="Left" Height="680" Margin="329,0,0,0" VerticalAlignment="Top" Width="325"/>
+        <StackPanel HorizontalAlignment="Left" Height="680" VerticalAlignment="Top" Width="325"/>
+        <StackPanel HorizontalAlignment="Left" Height="680" Margin="656,0,0,0" VerticalAlignment="Top" Width="325"/>
+     -->
+        <TreeView x:Name="dahomtr" HorizontalAlignment="Right" Height="574" VerticalAlignment="Top" Width="325" FontFamily="B Nazanin" FontSize="18" Foreground="#FFE3E3E3" FlowDirection="RightToLeft" Margin="0,106,0,0" Padding="0,40,0,0"/>
+        <TreeView x:Name="yazdahomtr" HorizontalAlignment="Right" Height="574" Margin="0,106,325,0" VerticalAlignment="Top" Width="325" FontFamily="B Nazanin" FontSize="18" Foreground="#FFE3E3E3" FlowDirection="RightToLeft" Padding="0,40,0,0"/>
+        <TreeView x:Name="davazdahomtr" HorizontalAlignment="Right" Height="574" Margin="0,106,650,0" VerticalAlignment="Top" Width="330" FontFamily="B Nazanin" FontSize="18" Foreground="#FFE3E3E3" FlowDirection="RightToLeft" Padding="0,40,0,0"/>
+        <Label x:Name="dahomlbltr" Content="دهم" HorizontalAlignment="Left" Margin="655,0,0,0" VerticalAlignment="Top" Foreground="#FFE3E3E3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="B Nazanin" FontSize="40" Height="101" Width="315"/>
+        <Label x:Name="yazdahomlbltr" Content="یازدهم" HorizontalAlignment="Left" Margin="330,0,0,0" VerticalAlignment="Top" Foreground="#FFE3E3E3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="B Nazanin" FontSize="40" Height="101" Width="315"/>
+        <Label x:Name="davazdahomlbltr" Content="دوازدهم" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FFE3E3E3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="B Nazanin" FontSize="40" Height="101" Width="325"/>
+
+    </Grid>
+</Page>

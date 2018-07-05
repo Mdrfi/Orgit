@@ -1,0 +1,28 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Orgit"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
+      xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls" x:Class="Orgit.Stopwatch"
+      mc:Ignorable="d"
+      Title="Stopwatch" Height="680" Width="980" Background="#FF212121">
+
+    <Grid>
+        <Label x:Name="mslbl" Content=".00" FontSize="75" Foreground="#E3E3E3" Height="auto" Width="auto" Margin="732,247,141,337" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" RenderTransformOrigin="0.552,0.292" />
+        <Button x:Name="startbtn"  HorizontalAlignment="Center" Width="140" Height="140"  BorderBrush="{x:Null}" Click="startbtn_Click" Background="{x:Null}" Margin="445,422,395,0" VerticalAlignment="Top">
+            <Image x:Name="startimg" Source="http://s9.picofile.com/file/8329462184/playbtn.png" Height="100" Width="100"/>
+        </Button>
+        <Button x:Name="resetbtn"  HorizontalAlignment="Center"  VerticalAlignment="Top" Width="80" Height="80" Margin="321,461,579,0" BorderBrush="{x:Null}" Background="{x:Null}" Click="resetbtn_Click">
+
+            <Image Source="http://s9.picofile.com/file/8329462518/reload.png" Height="50" Width="50" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        </Button>
+        <Label x:Name="hhlbl" Content="00" Foreground="#e3e3e3" FontSize="150" HorizontalAlignment="Center" VerticalAlignment="Center" Height="200" Width="200" Margin="157,163,623,317" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0"/>
+        <Label x:Name="mmlbl" Content="00" Foreground="#e3e3e3" FontSize="150" HorizontalAlignment="Center" VerticalAlignment="Center" Height="200" Width="200" Margin="357,163,423,317" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0"/>
+        <Label x:Name="sslbl" Content="00" Foreground="#e3e3e3" FontSize="150" HorizontalAlignment="Center" VerticalAlignment="Center" Height="200" Width="200" Margin="557,163,223,317" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0"/>
+        <Label x:Name="dot" Content=":" FontSize="150" HorizontalAlignment="Center" VerticalAlignment="Center" Height="200" Width="72" Margin="322,151,586,329" Foreground="#FFE3E3E3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" ScrollViewer.CanContentScroll="True"/>
+        <Label x:Name="dot_Copy" Content=":" FontSize="150" HorizontalAlignment="Center" VerticalAlignment="Center" Height="200" Width="72" Margin="522,151,386,329" Foreground="#FFE3E3E3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0" ScrollViewer.CanContentScroll="True"/>
+    </Grid>
+</Page>
